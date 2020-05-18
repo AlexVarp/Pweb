@@ -1,0 +1,103 @@
+body {
+	margin: 0px;
+}
+.contenedor {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* cabezote */
+header {
+	background-color: yellow;
+	font-family: Arial;
+	padding: 0px;
+	margin: 0px;
+}
+header h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 250%;
+	text-align: middle;
+}
+
+/* menu horizontal */
+.menu_hor {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: green;
+}
+.menu_hor li {
+  float: left;
+  border-right: 1px solid yellow;
+}
+.menu_hor li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+.menu_hor li:last-child {
+  border-right: none;
+}
+
+/* maquetación productos y banners */
+section { 
+	width: 70%; 
+	padding: 20px;
+	float: left;
+	margin-left: 10px;	
+	box-sizing: border-box;
+}
+aside {
+	width: 20%;
+	float: left;
+	padding: 20px;
+	margin-top: 4px;
+	box-sizing: border-box;
+
+aside img {
+	width: 10%;
+	height: auto;
+}
+
+}
+article {
+	clear: both;
+	/*border-bottom: dashed gray 1px;*/
+}
+article img {
+  float: left;
+  width: 10%;
+  height: auto;
+  margin-right: 10px;
+  
+}
+
+/* pie de página */
+footer {
+	clear: both;
+	background-color: yellow;
+	margin: 0px;
+	padding: 5px;
+	border-top: 2px solid black;
+	font-family: Arial;
+}
+@media screen and (max-width: 800px){
+  .main {
+
+	width: 100%;
+  }
+  aside {
+	  width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px){
+	.contenedor {
+		width: 100%;
+	}
+}
