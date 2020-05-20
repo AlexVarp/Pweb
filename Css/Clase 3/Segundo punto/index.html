@@ -10,138 +10,137 @@
 </head>
 
 <body>
-    <!--Maquetado de toda la pagina-->
-    <div class="Web">
+    <div class="web">
+    <!--CABECERA-->
 
-    <!--Agregaremos la Cabezera donde ira el titulo y su buscador-->
-    <div class="Cabezera">
+      <nav>
+          <div class="encabezado">
+              <div>
+                 <h3>NOMBRE DEL SITIO</h3>
+              </div>
+                        <div>  
+                            <span class="box"><i class="fa fa-search"></i></span>
+                            <input type="search" id="search" placeholder="Search..."  />
+                             </div>
+                            <div>   
+                               
+                                <button>Login</button>
+                            </div>
+          </div>
+      </nav>
+
+    <!--Centro de pagina, seccion de reproduccion y comentarios-->
+    <div class="centro">
+        <!--La clase LadoA abarca el reproductor y los comentarios-->
+        <div class="LadoA">
             <div>
-            <h1>NOMBRE DEL SITIO</h1>	
+                <iframe width="701" height="526" src="https://www.youtube.com/embed/MVpdJvjVVI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        <!--Barra de Busqueda-->
-        <div>
-            
-                <span class="box"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Search..."  />
-            
+                <div class="Cm">
+                    <h3>Comentarios</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique fuga sapiente excepturi temporibus, delectus, quod laborum reprehenderit facilis earum ad, corrupti facere accusantium illum quisquam quis incidunt inventore aliquam.</p>
+                    <br><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit qui eveniet excepturi atque amet repellat hic rem necessitatibus cum saepe, blanditiis totam porro aperiam voluptatem soluta architecto natus facere eum.</p>
+                </div>
         </div>
-        <!--Boton de login-->
-        <div >
-            <button>Login</button>
-        </div>
-    </div>
-    <!--Aca tenemos nuestros 3 div jutnos, video, recomendados y comentarios-->
-    <div class="Maquetado2">
-     <!--Seccion donde se mostrara el video-->
-        <div class="Reproductor">
-        <div id="vid">
-            
-        <img src="images/video.png"/>
-   
-        </div>
-        <!--Seccion de Comentarios-->
-        <div class="Comentarios">
-            <h2>Comentarios</h2>
-            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>	
-            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>	
-        </div>
-        </div>
-
-        <!--Videos Recomendados-->
-        <dic class="VideosR">
-        <div class="vr">
-            <div>
-            <article>
-            <img src="images/producto_01.jpg"/>
-            <h3 class="recomendaditos"><u>Video 001</u></h3>
-            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>	
-
-        </article>
+    <!--Seccion de videos recomendados-->
+        <div class="LadoB">
+    <!--La clase recomG abarca la miniatura y descripcion de los videos recomendados-->
+            <div class="RecomG">
+    <!--TamRecom es etiqueta para el tamano de la miniatura-->
+            <div class="TamRecom">
+                <iframe width="935" height="526" src="https://www.youtube.com/embed/CJJOVsDxfkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div>
-            <article>
-            <img src="images/producto_02.jpg"/>
-            <h3 class="recomendaditos"><u>Video 002</u></Video></h3>
-            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>	
-            </article>
+                <div>
+                    <h3 class="recomendaditos"><u>Video 001</u></h3>
+                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>	
+                </div>
+              
+            </div>
+            <br>
+            <div class="RecomG">
+            <div class="TamRecom">
+                <iframe width="935" height="526" src="https://www.youtube.com/embed/CJJOVsDxfkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div>
-        
-            <article>
-                <img src="images/producto_02.jpg"/>
-                <h3 class="recomendaditos"><u>Video 003</u></h3>
+                <h3 class="recomendaditos"><u>Video 002</u></h3>
                 <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>	
-                </article>
-                
-            <article>
-        
             </div>
-            <div>
-            <img src="images/producto_03.jpg"/>
-            <h3 class="recomendaditos"><u>Video 004</u></h3>
-            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>	
-            </article>
             </div>
-        
+            <br>
+            <div class="RecomG">
+            <div class="TamRecom">
+                <iframe width="935" height="526" src="https://www.youtube.com/embed/CJJOVsDxfkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        
-        </dic>
+                <div>
+                    <h3 class="recomendaditos"><u>Video 003</u></h3>
+                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>	
+                </div>
+            </div>
+            <br>
+            <div class="RecomG">
+            <div class="TamRecom">
+                <iframe width="935" height="526" src="https://www.youtube.com/embed/CJJOVsDxfkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+                <div>
+                    <h3 class="recomendaditos"><u>Video 004</u></h3>
+                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>	
+                </div>
+            </div>
+            <br>
+        </div>
     </div>
 
-     
-
-
+    <!--Pie de pagina-->
     <!--Categorias-->
-    <div class="Categoriat">
-        <div>
-            
-            <h3 class="titulo uno"> Categoria 100</h3>
-           
-            <img src="images/x.jpg"/>
-            <li><a href="video101">Video 101</a></li>
-            <br>
-            <img src="images/x.jpg"/>
-            <li><a href="video102">Video 102</a></li>
+ <div class="Categoriat">
+    <div>
         
-        </div>
-
-        
-        <div>
-            <h3 class="titulo uno" >  Categoria 200</h3>
-            <img src="images/x.jpg"/>
-            <li><a href="video201">Video 201</a></li>
-            <br>
-            <img src="images/x.jpg"/>
-            <li><a href="video202">Video 202</a></li>
-        
-        </div>
-
-        
-        <div>
-            <h3 class="titulo uno" > Categoria 300</h3>
-            <img src="images/x.jpg"/>
-            <li><a href="video301">Video 301</a></li>
-            <br>
-            <img src="images/x.jpg"/>
-            <li><a href="video302">Video 302</a></li>
-        
-        </div>
-        
-        
-        <div>
-            <h3 class="titulo uno">Categoria 400</h3>
-            <img src="images/x.jpg"/>
-            <li><a href="video401">Video 401</a></li>
-            <br>
-            <img src="images/x.jpg"/>
-            <li><a href="video402">Video 402</a></li>
-      
-        </div>
-
-        
+        <h3 class="titulo"> Categoria 100</h3>
+       
+        <img src="images/x.jpg"/>
+        <li><a href="video101">Video 101</a></li>
+        <br><br>
+        <img src="images/x.jpg"/>
+        <li><a href="video102">Video 102</a></li>
+        <br>
     </div>
-</div>
+
     
+    <div>
+        <h3 class="titulo" >  Categoria 200</h3>
+        <img src="images/x.jpg"/>
+        <li><a href="video201">Video 201</a></li>
+        <br><br>
+        <img src="images/x.jpg"/>
+        <li><a href="video202">Video 202</a></li>
+    
+    </div>
+
+    
+    <div>
+        <h3 class="titulo" > Categoria 300</h3>
+        <img src="images/x.jpg"/>
+        <li><a href="video301">Video 301</a></li>
+        <br><br>
+        <img src="images/x.jpg"/>
+        <li><a href="video302">Video 302</a></li>
+    
+    </div>
+    
+    
+    <div>
+        <h3 class="titulo">Categoria 400</h3>
+        <img src="images/x.jpg"/>
+        <li><a href="video401">Video 401</a></li>
+        <br><br>
+        <img src="images/x.jpg"/>
+        <li><a href="video402">Video 402</a></li>
+  
+    </div>
+
+</div>
+    </div>
 </body>
 
 </html>
