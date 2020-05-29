@@ -1,107 +1,98 @@
-*{
-    margin: 0;
-}
-
-.encabezado div
-{
-    background: #ecf0f1;
-    padding:1em;
-}
-
-
-
-
-/*div:hover
-{
-    border: 1px solid#f1c40f;
-}
-*/
-.encabezado
-{
+.container {
+    background: #ffffff;
+    width: 90%;
+    height: auto;
     display: grid;
-    grid-template-columns:1fr 25% 10%;
-    grid-template-rows: 60px;
-    background: #8bc259;
-   text-align: start;
- 
-}
+    max-width: 1000px;
+    margin: 1.2em auto;
+    grid-template-areas: "encabezado encabezado encabezado encabezado"
+                         "ladoA ladoA ladoA ladoB"
+                         "categoria1 categoria2 categoria3 categoria4";
+    grid-template-columns: repeat(4, 1fr);
+  
+    
+    
+  }
 
-.encabezado div 
-{
-    background: #8bc259; 
-}
- 
-.centro
-{
+  .container > .encabezado,
+  .container > .ladoA,
+  .container > .ladoB,
+  .container > .categorias,
+  .container > div 
+  {
+    background: #ffffff;
+     
+    border: 1px solid #000000;
+  }
+
+
+  /*Encabezado para que ocupe toda la parte de arriba*/
+  .container .encabezado
+  {
     display: grid;
-    grid-template-columns: 65% 1fr;
+    grid-column: 1/6;
+    grid-template-columns:1fr auto auto;
     grid-template-rows: auto;
+    background: #8bc259;
+    text-align: start;
+    gap: 1em;
+    align-items: center;
+    
+  }
+  .container .ladoA
+  {
+      grid-column: span 3;
+  }
+  .container .ladoB
+  {
+      grid-column: span 2;
+  }
+
+/*Tamano reproductor*/
+.ladoA iframe
+{
+        display: grid;
+        width: 96%; 
+        height: 300px; 
+        padding:1em; 
+        margin: 2px;    
+}
+/*Letras comentarios*/
+.ladoA .Cm
+{
+   
+    margin: 20px;
+    padding: 10px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
    
 }
-.LadoA
-{
 
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 60% 1fr;
-    min-width: 260px;
-    min-height: 260px;
-}
-
-.Comentarios
+/*estrellas al lado de comentarios*/
+.Cm img
 {
-    Background: #8bc259;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    
+  width: 30%;
+  height: 20px;
+  float: right;
 }
-/*Tamajno reproductor*/
-.LadoA iframe
-{
-    
-    display: grid;
-        width: 96%; 
-        height: 100%; 
-        padding:1em;  
-        
-       
-}
-.LadoA .Cm
-{
-    border: black 2px solid ;
-    margin: 20px;
-}
-/*
-.tamano
-{
-    float: left;
-    width: 2500%;
-    height: auto;
-    margin-right: 10px;
-}
-*/
-
 /*Tamano imagenes de videos reomendados*/
 .TamRecom iframe
 {
-
-    width: 100%;
-    height: 100%;
+    width: 130px;
+    height: 120px;
     float: left;
     box-sizing: border-box;
-    
 }
 
+/*recomG abarca la miniatura y descripcion de los videos recomendados*/
 .RecomG
 {
-  
-
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-columns:auto auto ;
     grid-template-rows: auto;
-    border: black 2px solid ;
-    margin: 8px;
-
+    border:2px  ;
+    margin:6px;
 }
 
 /*Letras de las categorias*/
@@ -111,19 +102,40 @@
     font-size: 23px;
     font-family: Font-weight bold;
     text-align: start;
+    margin: 0;
+    height: 30px;
+
    }
 /*imagenes de las categorias*/
-img 
+.categorias img 
 {
     float: left;
-    width: 10%;
+    width: 30px;
     height: auto;
-  }
+}
 
-  /*las 4 secciones de las categorias*/
-.Categoriat
-{
+.container .categorias
+  {
     display: grid;
+    grid-column:auto;
+    margin: 2px;
+  }
+/*Letra de videos recomendados*/
+  .recomendaditos
+{
+    color:blue;
+    font-size: 100%;
+
+    
+}
+
+
+/*las 4 secciones de las categorias*/
+
+.container .categorias
+  {
+    display: grid;
+    grid-column: 1/6;
     grid-template-columns:repeat(4, auto);
     grid-template-rows:auto;
     background: #8bc259;
@@ -134,64 +146,25 @@ img
        
 }
 
-.Categoriat div
-{
-    background: #8bc259;
-    padding:1em;
-}
-.recomendaditos
-{
-    color:blue;
-    font-size: 23px;
-    text-align: start;
+/* MEDIA QUERIES */
 
-}
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .ladoA {
+        grid-column: 1 / -1;
+        
+    }
+    .ladoA iframe
+    {   
+        width: 92%;     
+    }
+    .container .ladoB {
+        grid-column: 1 / -1;
+    }
 
-.web {
-    max-width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-    grid-gap: 2px;
+    .container .categorias {
+        grid-template-columns:repeat(2, auto);
+    }
 }
-.web > * {
-  
-
-  padding: 10px;
-  grid-column: col-start / span 12;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-@media (min-width: 500px) {
-    .content {
-      grid-column: col-start / span 9;
-    }
-    .side {
-      grid-column: col-start 10 / span 3;
-    }
-    nav ul {
-      display: flex;
-    }
-    nav ul li {
-      margin-right: 10px;
-    }
-  }
-  
-  @media (min-width: 700px) {
-    .main-nav {
-      grid-column: col-start / span 2;
-    }
-    .content {
-      grid-column: col-start 3 / span 8;
-    }
-    .side {
-      grid-column: col-start 11 / span 2;
-    }
-    nav ul {
-      flex-direction: column;
-    }
-  }
